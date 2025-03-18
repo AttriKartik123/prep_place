@@ -14,4 +14,13 @@ b=20; //NO ERROR
 console.log(b)
 
 
+//karan start 
+const name="karan"
+let uni="GNDU"
+
+name="harleen"
+uni="KPU"
+
+console.table([name , uni ])
+
 //let vs var 
