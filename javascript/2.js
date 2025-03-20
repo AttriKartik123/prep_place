@@ -37,13 +37,40 @@
 //------------------------
 
 // console.log(+true);--->1
-console.log(-true)
+
+// console.log(-true)
+
 // console.log(true);
 //console.log(true+); it will give error
 
 // console.log(+"");
 
-// //------------------------
+// ------------------------
 // 1--> true  0-->false
 // "harleen"--> true   ""-->false-->0
+
+//---------------------------
+
+// let gameCounter =100 ;
+// gameCounter ++ ;
+// console.log(gameCounter) ; 
+
+//-------------------------
+
+//  let gameCounter =100 ;
+//  ++gameCounter ;
+//  console.log(gameCounter) ; 
+ 
+
+//---------------------------- pre and post
+
+let x = 3;
+const y = x++;
+
+console.log(x,y);
+
+
+let a = 3;
+const b = ++a;
+console.log(a,b);
 
