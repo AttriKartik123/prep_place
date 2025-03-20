@@ -69,3 +69,5 @@ console.log(typeof name);
 
 name="Harleen";
 console.log(typeof name);
+
+
