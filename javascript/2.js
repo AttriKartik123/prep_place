@@ -91,8 +91,42 @@
 // console.log(undefined  <= 0); // sabhi me false hi aaiga becoz of undefined 
 
 
-//  === strict check 
+// //  === strict check 
 
-console.log("2" == 2) ;
-console.log("2" === 2) ; // third equals to will check for datatype 
+// console.log("2" == 2) ;
+// console.log("2" === 2) ; // third equals to will check for datatype 
 
+
+// Datatypes -->7
+// Primitive
+// String,Number,Boolean,null,undefined,Symbol,BigINT
+
+// Non-Primitive/Reference
+// Array,Object,Functions
+const heros=["iman","kartik"];
+
+let myObj={
+    name:"kartik",
+    age:21,
+}
+let a=10
+let b=20
+
+const add =function(a,b){
+console.log(a+b)
+}
+add(a,b);
+//ARRAY IS ITSELF AN OBJECT !!!!!!!!!!
+console.log(typeof heros);
+console.log(typeof myObj);
+console.log(typeof add);
+
+
+// const score=70 //javascript
+// const score:number =90 //typescript
+
+// const id=Symbol('123')
+// const anotherId=Symbol('123')
+// console.log(id===anotherId)
+
+// any number with 'n' at end becomes bigINT
