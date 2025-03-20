@@ -1,4 +1,4 @@
-// let score = "33" 
+// let score = "33"   OPERATORS video 6
 
 // console.log(typeof (score))
 
@@ -14,7 +14,7 @@
 // console.log(negValue);
 
 
-//------------------
+//------------------  str operations video 7
 
 // let str1= "hello";
 // let str2= " harry bhau ";
@@ -64,13 +64,35 @@
 
 //---------------------------- pre and post
 
-let x = 3;
-const y = x++;
+// let x = 3;
+// const y = x++;
 
-console.log(x,y);
+// console.log(x,y);
 
 
-let a = 3;
-const b = ++a;
-console.log(a,b);
+// let a = 3;
+// const b = ++a;
+// console.log(a,b);
+
+//------------------------------comparison video 8 
+
+
+// console.log(1 > 1);
+// console.log("2" > 1);     // automatically convert krdega
+// console.log("02" > 1);
+
+
+// console.log(null > 0);
+// console.log(null == 0);  // isme convert nhi krega kyuki usme sirf equals to hai 
+// console.log(null >= 0);  // gretaer than or less than wale me convert krdega 
+
+// console.log(undefined  == 0);
+// console.log(undefined  > 0);  
+// console.log(undefined  <= 0); // sabhi me false hi aaiga becoz of undefined 
+
+
+//  === strict check 
+
+console.log("2" == 2) ;
+console.log("2" === 2) ; // third equals to will check for datatype 
 
