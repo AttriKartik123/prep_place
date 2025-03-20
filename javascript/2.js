@@ -36,10 +36,14 @@
 
 //------------------------
 
-// console.log(+true);
+// console.log(+true);--->1
+console.log(-true)
 // console.log(true);
 //console.log(true+); it will give error
 
-console.log(+"");
+// console.log(+"");
 
-//------------------------
+// //------------------------
+// 1--> true  0-->false
+// "harleen"--> true   ""-->false-->0
+
