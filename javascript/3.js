@@ -46,3 +46,11 @@ const url="https://harry.beta/harry%20gay" ;
 console.log(url);
 console.log(url.replace('%20', '-')); //.replce(what you want to replace , with u want to replace)
 
+
+console.log(url.includes('gay'));
+console.log(url.includes('hello'));
+
+
+//------------> Convert an string to Array 
+const splitName = new String('harry-is-gay');
+console.log(splitName.split('-')); //.split(separator , limit) or .split(separator)
