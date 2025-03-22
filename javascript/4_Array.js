@@ -63,4 +63,10 @@ console.log(marvel_heros)
 //spread 
 const new_heros=[...marvel_heros,...dc_heros]
 console.log(new_heros);
-...->>>>>>>>>spread
+// ...->>>>>>>>>spread
+
+
+const another_Array= [1,2,3,[4,5,6],7,[6,7,[4,5]]];
+
+const real_another_array = another_Array.flat();
+
