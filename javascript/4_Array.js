@@ -67,6 +67,20 @@ console.log(new_heros);
 
 
 const another_Array= [1,2,3,[4,5,6],7,[6,7,[4,5]]];
+const real_another_array = another_Array.flat(Infinity);
+console.log(real_another_array);
 
-const real_another_array = another_Array.flat();
 
+console.log(Array.isArray("hITESH"));
+console.log(Array.from("hITESH"));
+//cant convert object direct to array, have to specify
+//value to convert
+console.log(Array.from({name:"hitesh",age:20}));
+
+let score1=200
+let score2=340
+let score3=349
+
+console.log(Array.of(score1,score2,score3));
+
+ 
