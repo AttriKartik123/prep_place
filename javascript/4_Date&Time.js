@@ -18,5 +18,6 @@ console.log(myCreatedDate.toDateString());
 // date now
 
 let myTimeStamp = Date.now();
-console.log(myTimeStamp.toString());
-console.log(myTimeStamp.toDateString());
+console.log(myTimeStamp)
+
+
