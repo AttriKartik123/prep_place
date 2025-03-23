@@ -26,11 +26,10 @@ const JsUser = {
 // console.log(JsUser["fullname"]);
 
 
-console.log(JsUser.mySym); // to print symbol -------- but agr abhi DT dekhenge toh iski DT symbol nhi hai , balki string dega
-console.log(typeof JsUser.mySym);
+console.log(JsUser[mySym]); // to print symbol -------- but agr abhi DT dekhenge toh iski DT symbol nhi hai , balki string dega
+console.log(typeof JsUser[mySym]);
 
-console.log(JsUser["mySym"]);   //--------SYMBOL K LIYE ISSE SQUARE BRACKETS ME HI LIKHNA HOTA HAI 
-console.log(typeof JsUser.mySym);
+console.log(JsUser[mySym]);   //--------SYMBOL K LIYE ISSE SQUARE BRACKETS ME HI LIKHNA HOTA HAI 
 
 // console.log(JsUser.fullname); nhi dega output
 
