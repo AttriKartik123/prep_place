@@ -13,7 +13,7 @@ const JsUser = {
     name:"Hitesh"  ,// name by default as a string lega
     "fullname" : "Hitesh Choudhary" , // abb isse dot se access nhi kar skte
     age: 18,  //key:value
-    mySym : "myKey1" ,
+    [mySym] : "myKey1" , //-------symbol k naam ko square bracket me likho , tabhi wo as a symbol kaam krega 
     location: "Ghaamandi" ,
     email : "annonymousannony@gmail.com",
     isLoggedIn : false ,
@@ -21,9 +21,9 @@ const JsUser = {
 
 }
 //--accessing values
-console.log(JsUser.email);
-console.log(JsUser["email"]);
-console.log(JsUser["fullname"]);
+// console.log(JsUser.email);
+// console.log(JsUser["email"]);
+// console.log(JsUser["fullname"]);
 
 
 console.log(JsUser.mySym); // to print symbol -------- but agr abhi DT dekhenge toh iski DT symbol nhi hai , balki string dega
