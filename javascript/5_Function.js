@@ -51,22 +51,60 @@
 // bodmas(20, 30);
 
 
+
+
+
+
+
+
 // --------------arguements tyaar krne k liye and we dont know about the parameters 
 //---> Dynamic parameters 
 
 // Rest OPERATOR --> ... is called as rest operator
-function calculateCartPrice(...num1) {
-return num1 
+// function calculateCartPrice(...num1) {
+// return num1 
 
-}
+// }
 
-console.log(calculateCartPrice(200 , 400 ,500)) ;
+// console.log(calculateCartPrice(200 , 400 ,500)) ;
+
+// function calculateCartPrice(val1 , val2, ...num1) {
+//     return num1 
+    
+//     }
+    
+//     console.log(calculateCartPrice(200 , 400 ,500, 2000)) ;  // val1=200 , val2 =400
+    
+//_____Object pass in function 
+
+
+    const user = {
+        username: "hitesh" ,
+        price: 199 ,
+    }
+
+    function handleObject(anyobject){  // user will come on place of any object 
+        console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`) ;
+    }
+
+  //  handleObject(user)
+
+  handleObject({// ye javascript kki property hai ki "|jehre naam da function hai usse naam da object bnaa rhe taa h oh apne aap call ho janda "
+    username: "sam" ,
+    price: 399
+  })
 
 
 
+  //----- array pass in function
 
-function add(...num1 ){ //--------Rest parameter must be last formal parameter
-     return += num1 ;
 
-}
-console.log(add(10,20,30));
+  const myArray = [200,400,100,600]
+
+  function returnSecondValue(getArray){  //
+    return getArray[1] ;
+  }
+
+  //console.log(returnSecondValue(myArray));
+
+  console.log(returnSecondValue([200 ,100 ,300 ,400 ,500]));
