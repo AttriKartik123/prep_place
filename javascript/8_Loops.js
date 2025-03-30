@@ -76,12 +76,19 @@
 
 //---------> WHILE AND DO-WHILE LOOP
 
-let myArray = ['flash' , ' batman ' , 'superman']
+// let myArray = ['flash' , 'batman' , 'superman']
 
-let arr=0 ;
+// let arr=0 ;
 
-while(arr < myArray.length){
-    console.log(`value is ${myArray}`);
-    arr+=1;
+// while(arr < myArray.length){
+//     console.log(`value is ${myArray[arr]}`);
+//     arr+=1;
     
-}
+// }
+
+
+let score=1
+do{
+    console.log(`Score is ${score}`);
+    score++;
+}while(score<=10);
