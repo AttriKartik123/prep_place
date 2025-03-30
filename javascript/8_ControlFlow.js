@@ -115,38 +115,107 @@ gradetocgpa("X");
 // 7->sunday
 // any other value->invalid day
 
-function getDayName(dayNumber) {
-    let daynumber = 1
-    switch (dayNumber) {
-      case 1:
-        console.log("monday");
-        break;
-      case 2:
-        console.log("tuesday");
-        break;
-      case 3:
-        console.log("wednesday");
-        break;
-      case 4:
-        console.log("thursday");
-        break;
-      case 5:
-        console.log("friday");
-        break;
-      case 6:
-        console.log("saturday");
-        break;
-      case 7:
-        console.log("sunday");
-        break;
+// function getDayName(dayNumber) {
+//     let daynumber = 1
+//     switch (dayNumber) {
+//       case 1:
+//         console.log("monday");
+//         break;
+//       case 2:
+//         console.log("tuesday");
+//         break;
+//       case 3:
+//         console.log("wednesday");
+//         break;
+//       case 4:
+//         console.log("thursday");
+//         break;
+//       case 5:
+//         console.log("friday");
+//         break;
+//       case 6:
+//         console.log("saturday");
+//         break;
+//       case 7:
+//         console.log("sunday");
+//         break;
 
-      default:
-        console.log("Invalid day"); 
+//       default:
+//         console.log("Invalid day"); 
        
-    }
-  }
+//     }
+//   }
   
   
-  getDayName(4); 
+//   getDayName(4); 
   
+
+
+
+
+
+//------->
+
+// const userEmail = "h@hitesh.ai";
+
+// if(!userEmail) { // check does we have value
+//     console.log("Got user email");
+// }else{
+//     console.log("Dont have user email");
+// }
   
+
+// falsy values 
+//false , 0 , -0 , BigInt , "" , null , undefined , Nan (Not a number)
+
+//truthy values
+// "0" , " false" , " " , [],{}, function(){}  
+// false == 0 : gives true op
+// false =='' : gives true
+// 0 == '' : gives true
+
+const emptyObj = {}
+
+if (Object.keys(emptyObj).length === 0){
+    console.log("Object is empty");
+    
+}
+
+//-------->Nullish coalescing operator (??) : null yaa value ko value assign krdega
+
+let val1 ;// undefined value 
+// val1 = 5 ?? 10  
+// val1 = null ?? 10
+// console.log(val1);
+
+
+val1 = undefined ?? 15 ;
+console.log(val1);
+
+val1 = null ?? 10 ?? 15 ;  // null or undefined ko chod k jo bhi left side wali value hogi wohi retun krega 
+console.log(val1);
+
+val1 = 15 ?? undefined; // agr pehle hi value milgyi tab wo null ya undefined nbhi chalaiga 
+console.log(val1);
+
+
+//----> left side null yaa undefined aaugaa taa oh right wala return krega other wise left wala krega return
+// ---------------> IF LEFT FALSY  VALUE HAI TABHI WO RIGHT WALA RETURN KREGA OTHERWISE LEFT WALA RETURN KREGA 
+
+
+// ternery operator
+
+if(a>10)
+{
+
+    console.log("a is greater than 10");
+}else{
+    console.log("a is smaller than 10");
+    
+}
+
+
+
+// same in ternery 
+
+a>10 ? console.log("a is greater than 10") : console.log(" a is smaller than 10 ")
