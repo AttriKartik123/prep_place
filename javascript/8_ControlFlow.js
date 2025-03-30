@@ -141,12 +141,12 @@ function getDayName(dayNumber) {
         break;
 
       default:
-        return "Invalid day";
+        console.log("Invalid day"); 
        
     }
   }
   
   
-  console.log(getDayName(3)); 
+  getDayName(4); 
   
   
