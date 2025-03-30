@@ -218,4 +218,4 @@ if(a>10)
 
 // same in ternery 
 
-a>10 ? console.log("a is greater than 10") : console.log(" a is smaller than 10 ")
+a>10 ? console.log("a is greater than 10") : console.log(" a is smaller than 10 ") 
