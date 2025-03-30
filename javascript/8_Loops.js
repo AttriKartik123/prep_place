@@ -73,3 +73,15 @@
     
 // }
 
+
+//---------> WHILE AND DO-WHILE LOOP
+
+let myArray = ['flash' , ' batman ' , 'superman']
+
+let arr=0 ;
+
+while(arr < myArray.length){
+    console.log(`value is ${myArray}`);
+    arr+=1;
+    
+}
