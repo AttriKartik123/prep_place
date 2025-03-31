@@ -97,13 +97,98 @@
 
 
 // FILTER AND MAP AUTOMATICALLY RETURN  KRTA  HAI AND FOREACH KUCH BHI RETURN NHI KRTA HAI 
-const myNumers = [1,2,3,4,5,5,6,7,8]
+// const myNumers = [1,2,3,4,5,5,6,7,8]
 
-const newNums = myNumers.map((num) => {return num+10 })  // maps automtically return krta hai value 
-console.log(newNums);
+// const newNums = myNumers.map((num) => {return num+10 })  // maps automtically return krta hai value 
+// console.log(newNums);
 // MAP NEW NUMS NAAM KI EK NAYI ARRAY BNAA RHA HAI AND USME ANSWER DE RHA HAI 
 
 
 //--------> //FILTER KI USAGE
 // const newNums = myNumers.filter((num) => {return num+10 })  // filter automtically return krta hai value 
 // console.log(newNums); // IT WOULD NOT GIVE OUTPUT BECOZ WE HAVE TO GIVE CONDITION TO IT IN FILTER ISILIYE IT WOULD NOT GIVE ANSWER
+
+
+//CHAINING METHOD----- Multiple maps and filters lgane ka treeka
+// const newNumers = [1,2,3,4,5,5,6,7,8,10];
+
+// const newNums = newNumers
+//                 .map((num) => num * 10)  
+//                 .map((num) => num / 5)   
+//                 .filter((num) => num > 10); 
+
+// console.log(newNums);
+
+
+// REDUCER METHOD
+// const array1 = [2,3,4,5] ;
+// // saari ek me hi reduce hogi , mean to say sirf ek value ki jagah and ussi me saraa store ho rha hai  
+// const initialValue = 1;
+// const sumWithInitial =array1.reduce(
+//     (accumulator, currentValue)=> accumulator + currentValue , initialValue );
+
+//     console.log(sumWithInitial);
+    
+
+
+// const myNums = [3,2,1]
+
+// const myTotal= myNums.reduce(function (acc, currVal) {
+//     return acc-currVal
+// })
+// console.log(myTotal); op=0
+
+
+
+
+// const myNums = [3,2,1]
+
+// const myTotal= myNums.reduce(function (acc, currVal) {
+//     return acc+currVal
+// },0)
+// console.log(myTotal);   // op=6
+
+
+
+// const myNums = [1,2,3]
+
+// const myTotal= myNums.reduce(function (acc, currVal) {
+//     console.log(`acc: ${acc} and currVal: ${currVal}`);
+    
+//     // return acc*currVal
+//     return acc+currVal
+// },0)
+// console.log(myTotal);
+
+
+
+// writing it in array function
+// const myNums = [1,2,3]
+// const myTotal = myNums.reduce((acc , curr) => acc+curr , 0)
+
+// console.log(myTotal);
+
+
+
+const shoppingCart = [
+    {
+        itemName : "js Course",
+        price : 2999
+    },
+    {
+        itemName : "python Course",
+        price : 4999
+    },
+    {
+        itemName : "Mobile dev Course",
+        price : 5999
+    },
+    {
+        itemName : "Data Analysis Course",
+        price : 15999
+    },
+]
+
+
+const PriceToPay = shoppingCart.reduce((acc,item) =>  acc + item.price , 0) ;
+console.log(PriceToPay);
