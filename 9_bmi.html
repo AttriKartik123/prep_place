@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>BMI Calculator</h3>
+  
+    <form action="">
+     <p><label for="">Height in CM</label><input type="text" id="height">   </p>   
+     <p> <label for="">Weight in KG</label><input type="text" id="weight">  </p>
+      <button class="button">Calculate</button>
+      <div id="results"></div>
+    </form>
+
+
+    <script>
+ const form=document.querySelector('form')
+
+//this usecase will give you empty value 
+//  let h=document.querySelector("#height")
+//  let w=document.querySelector('#weight')
+
+
+form.addEventListener( 'submit',function(e){
+e.preventDefault()
+
+const h=parseInt(document.querySelector("#height").value)
+const w=parseInt(document.querySelector('#weight').value)
+const results=document.querySelector('#results')
+
+results.innerHTML=w/((h*h)/1000).toFixed(2);
+
+ 
+
+}  )
+
+
+    </script>
+</body>
+</html>
