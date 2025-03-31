@@ -72,6 +72,22 @@ const books = [
     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition:1989},
 ];
-// wo books jinka genre History hai wo niokaalo 
-const userBooks = books.filter((bk) => bk.genre === 'History')
-console.log(userBooks);
+
+const bookList = document.getElementById("book-list");
+        
+books.forEach(book => {
+    const bookCard = document.createElement("div");
+    bookCard.classList.add("book-card");
+    bookCard.innerHTML = `
+        <h2>${book.title}</h2>
+        <p><strong>Genre:</strong> ${book.genre}</p>
+        <p><strong>Published:</strong> ${book.publish}</p>
+        <p><strong>Edition:</strong> ${book.edition}</p>
+    `;
+    bookList.appendChild(bookCard);
+});
+
+
+// // wo books jinka genre History hai wo niokaalo 
+// const userBooks = books.filter((bk) => bk.genre === 'History')
+// console.log(userBooks);
