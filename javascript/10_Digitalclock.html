@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time display</title>
+    <style>
+        .display{
+            border: 2px solid black;
+            margin-left: 45%;
+            margin-top: 10%;
+            height: 30px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="display" id="clock"></div>
+    <script>
+        const clock = document.getElementById('clock')
+
+       
+        setInterval(function(){
+            let date = new Date()
+        //console.log(date.toLocaleTimeString())
+        clock.innerHTML = date.toLocaleTimeString();
+        
+
+        } ,1000) // has two parameters and date bar bar run ho uske liye koi method lagainge==== setinterval method
+
+    </script>
+</body>
+</html>
