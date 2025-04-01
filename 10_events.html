@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: brown; color: aliceblue;">
+    <h2 id="copy">Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px"  id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li style="color: aliceblue;"><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+</body>
+<script>
+
+//events in javascript run sequentially(in a sequence)
+// ist approach= onclick() in body
+// 2nd approach 
+// document.getElementById('owl').onclick=function()
+// {
+//     alert('owl napea')
+// }
+// we should use eventlisteners becuase they give us
+// propogation property
+
+// 3rd Approach eventlisteners give more features
+
+// document.getElementById('owl').addEventListener("click",function(){
+// alert("hello iman")
+// },false)
+//false is default here, no need to write
+
+//4th approach
+//attachEvent() method-->used in old times in internet explorer
+//jQuery-- onEventListener
+
+document.getElementById('owl').addEventListener("click",function(e){
+console.log(e.timeStamp);
+
+},false)
+
+//study types of events,timestamp,defaultPrevented
+//target, toElement, srcElement, currentTarget
+//clientX, clientY, screenX, screenY-->position related
+//altkey,ctrlkey,shiftkey,keyCode
+
+//Event Propagation
+
+
+// document.getElementById('images').addEventListener("click",function(e){
+// console.log("clicked inside the ul");
+
+// },false)
+
+
+// document.getElementById('river').addEventListener("click",function(e){
+// console.log("clicked inside the owl");
+// e.stopPropagation() //bubble hoke upar ke element mai nhi jayega
+
+
+
+// // bubbling up->first inner element clicked then outer
+// // inside se outside chlta hai
+
+// },false)//writing 'false' or not will not make any difference
+
+//when true is present there then it is from outside to inside
+//capturing is top to bottom
+
+
+
+document.getElementById('google').addEventListener("click",function(e)
+{
+    e.preventDefault()//prevents default behaviour
+    console.log("i am unable to open it");
+    
+})
+
+document.getElementById('copy').addEventListener("copy",function(e)
+{
+    e.preventDefault()//prevents default behaviour
+   
+    
+})
+
+//hide the clicked image
+
+document.getElementById('images').addEventListener("click",function(e){
+//image di parentNode ohdi list aa
+if(e.target.tagName==='IMG'){
+
+    (e.target.parentNode).remove()
+}
+
+
+})
+</script>
+</html>
