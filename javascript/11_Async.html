@@ -10,6 +10,9 @@
     <button id="stop">STOP</button>
 
     <script>
+        //set interval--> one one time te hunda rahwe
+        //set timeout-->ene gap te chle once
+        //clear timeout--> stop krde set-timeout nu
      // SET TIMEOUT
     // setTimeout(function(){
     //     console.log("KarryHarry");  // ek hi bar print hoga 
@@ -17,10 +20,24 @@
     // } , 2000) // 2 sec 
 
     // SET INTERVAL
-    setInterval(function() {
+    const functionname= function() {
         console.log("KarryHarryIman");
         
-    })
-    </script>
+    }
+    setInterval(functionname,5000)
+ 
+   
+   const changetext_after2sec = function(){
+    document.querySelector('h1').innerHTML="hemlo";
+   }
+   
+  
+   const a = setTimeout(changetext_after2sec,5000);
+   
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(a)//stops timeout
+   })
+
+   </script>
 </body>
 </html>
