@@ -13,7 +13,7 @@
 
 // Blocking- block the flow of the program -> Read file sync
 
-// Non_Blocking Code => doesnot block execution -> Read File Async -> Async mtlb baaki ke kaam kro mai file ko read krke aaya jra
+// Non_Blocking Code => doesnot block the flow of execution -> Read File Async -> Async mtlb baaki ke kaam kro mai file ko read krke aaya jra
 
 // set timeout - given tym k baad execute ho ,  and set time interval 
 
@@ -21,4 +21,6 @@
 // stack - LIFO
 
 // Fetch API - High priority 
+
+
 
