@@ -100,6 +100,13 @@ Fetch data from the server in the background and update the page on the client s
     3 LOADING Downloading; responseText holds partial data.
     4 DONE The operation is complete.
 
+<div id="card">
+
+  <h3 id="name"></h3>
+  <p id="avatar"></p>
+  <p id="company"></p>
+</div>
+
     <script>
         // https://api.github.com/users/AttriKartik123
         //sbse prhle obj bnaate hain 
@@ -114,8 +121,15 @@ Fetch data from the server in the background and update the page on the client s
             if (xhr.readyState === 4) {
             // const data = console.log(this.responseText); // XHR
             const data = JSON.parse(this.responseText); 
-            console.log(typeof data)
-                console.log(data.followers) ; // undefined aaiga 
+            const avatar=data.avatar_url
+            const company=data.company
+            const name=data.name;
+
+  document.getElementById('name').innerHTML=`My name is ${name}`
+  document.getElementById('avatar').innerHTML=`My avatar is ${avatar}`
+  document.getElementById('company').innerHTML=`My company is ${company}`
+            
+                // console.log(data.followers) ; // undefined aaiga 
 
                 //------------- RESPONSES ALWAYS CUMMM IN STRINGGGGGGG
                 // ------------JAVASCRIPT OBJECT NOTATION - json - yeh ek obj hi hota hai pr iska koi naam nhi hota hai 
@@ -129,5 +143,11 @@ Fetch data from the server in the background and update the page on the client s
 
     </script>
 </body>
+//v8 engine of js
+//console is a developer tool not only part of js
+// v8 engine runs js and v8 engine is created in c++
+//v8 gives you debuggin tools and all
+//v8 engine gives you console 
+
 
 </html>
