@@ -112,11 +112,16 @@ Fetch data from the server in the background and update the page on the client s
             console.log(xhr.readyState);
             // ek hi bar ready state 0 to 1 hogi kyuki hm abhi ise continously track nhi krk eh 
             if (xhr.readyState === 4) {
-                console.log(this.ResponseText); // XHR
+            // const data = console.log(this.responseText); // XHR
+            const data = JSON.parse(this.responseText); 
+            console.log(typeof data)
+                console.log(data.followers) ; // undefined aaiga 
 
+                //------------- RESPONSES ALWAYS CUMMM IN STRINGGGGGGG
+                // ------------JAVASCRIPT OBJECT NOTATION - json - yeh ek obj hi hota hai pr iska koi naam nhi hota hai 
+                
             }
         } // output 2 3 4 hojaigi 
-
 
         // console.log('Here');
         xhr.send();
