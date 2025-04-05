@@ -123,7 +123,7 @@ async function getAllUsers(){
         const response = await fetch
         ('https://jsonplaceholder.typicode.com/users')
         //it takes time for data to get fetched
-        const data= await response.json()
+        const data= await response.json() // kyuki value hmesha string me aati hai isiliye json me convert krdiya
         console.log(data);  
     } 
     catch (error) {
