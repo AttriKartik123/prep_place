@@ -18,8 +18,8 @@
 //  response =  fetch ('Something')  // Response is a global variable
 //              |   | 
 //           Data:  WebBrowser\node
-//           On fullfilled[]    |
-//           On Rejecction[]    Network Request milegi 
+//   On fullfilled[]             |
+//   On Rejecction[]           Network Request milegi 
 //                              |        |
 //                              Yes      No
 //                              |        |
