@@ -5,39 +5,39 @@
 //even array is an object in js
 //object has no parent of its own, so its prototype is null
 
-function multiplyby5(num){
-    return num*5
-}
-console.log( multiplyby5(5)); //i dont want to do this by this way
-//function is an object
+// function multiplyby5(num){
+//     return num*5
+// }
+// console.log( multiplyby5(5)); //i dont want to do this by this way
+// //function is an object
 
-multiplyby5.rollno=2
-console.log(multiplyby5.rollno);
-//protype is empty array, because object has no parent
-console.log(multiplyby5.prototype);
-
-
-//function has functionalities of a function and an object
+// multiplyby5.rollno=2
+// console.log(multiplyby5.rollno);
+// //protype is empty array, because object has no parent
+// console.log(multiplyby5.prototype);
 
 
-function createUser(username,score)
-{
-    this.username=username
-    this.score=score
-}
+// //function has functionalities of a function and an object
 
-createUser.prototype.increment=function(){
-    this.score++ //here "this" means for what it is called for
-}
-createUser.prototype.printMe=function(){
-    console.log(`score is ${score}`);
+
+// function createUser(username,score)
+// {
+//     this.username=username
+//     this.score=score
+// }
+
+// createUser.prototype.increment=function(){
+//     this.score++ //here "this" means for what it is called for
+// }
+// createUser.prototype.printMe=function(){
+//     console.log(`score is ${score}`);
     
-}
+// }
 
-const chai=new createUser("chai",20)
-const tea=createUser("tea",10)
-//new will be used on the thing whose prototype im calling
-chai.printMe()//cannot read properties of undefined
+// const chai=new createUser("chai",20)
+// const tea=createUser("tea",10)
+// //new will be used on the thing whose prototype im calling
+// chai.printMe()//cannot read properties of undefined
 
 
 /*
@@ -53,3 +53,28 @@ The constructor is called: The constructor function is called with the specified
 The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
 
 */
+
+// let myName = "hitesh    "
+// let myChannel = "chai     "
+// console.log(myName.truelength);
+
+
+
+let myHeros = ["thor" , "spiderman"]
+
+let heroPower = {
+    thor : "hammer",
+    spiderman: "sling",
+
+    getSildePower : function(){
+        console.log(`Spidy power is ${this.spiderman}`);
+        
+    }
+}
+
+Object.prototype.hitesh = function(){
+    console.log("Hitesh is present in all objects");
+    
+}
+
+heroPower.hitesh();
