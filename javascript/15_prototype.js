@@ -74,7 +74,48 @@ let heroPower = {
 
 Object.prototype.hitesh = function(){
     console.log("Hitesh is present in all objects");
-    
+
 }
 
 heroPower.hitesh();
+
+//with array and object, you can accress top level hierarchy 
+// and access all properties available to it
+
+Array.prototype.harleen=function(){
+    console.log("hemlo");
+    
+}
+myHeros.hitesh()
+myHeros.harleen()
+// heroPower.harleen()
+
+
+const Teacher ={
+    makeVideo:true
+}
+const TeachingSupport ={
+    isAvailable:false
+}
+const TASupport ={
+    makeAssignment:'JS',
+    fulltime:true,
+    __proto__:TeachingSupport //2 underscores
+}
+//now ith the help of rpototype wew will try to link them together
+// Teacher.__proto__=User
+//this is old, now we will use modern syntax using object
+
+
+Object.setPrototypeOf(TeachingSupport,Teacher)
+
+let anotherUsername="chaiaurcode           "
+String.prototype.trueLength=function(){
+    console.log(`${this}`);
+    console.log(`${this.name}`);
+    console.log(`True length is ${this.trim().length}`);
+
+}
+anotherUsername.trueLength()
+"hitesh".trueLength()
+"ICETEA".trueLength()
