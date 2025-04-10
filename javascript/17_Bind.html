@@ -1,0 +1,35 @@
+<!-- //ALL ABOUT BIND  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    class React{
+        constructor(){
+            this.library = "React";
+            this.server = "hiitp://localhost:300";
+
+            //requirement- jese page load ho object load hoje react ka
+            document
+            .querySelector('button')
+            .addEventListener('click', this.handleClick.bind(this))  //iska refernece neeche wale se jodne ke liye bind krna pdega
+
+        }
+
+        handleClick(){
+            console.log("Button Clicked");
+            console.log(this);
+            console.log(this.server);
+            
+            
+        }
+    }
+    const app = new React()
+</script>
+</html>
