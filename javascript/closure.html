@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+function init()
+{
+    let name = "mozilla"
+    function displayname()
+    {
+        console.log(name);
+        
+    }
+    displayname()
+} 
+init()
+
+
+function outer()
+{
+    name="harleen"
+    function inner()
+    { 
+        console.log('inner',name)
+    }
+    inner()
+}
+outer()
+console.log('outer',name)
+
+//in lexical scoping, inner function is
+// having access inside the outer function
+//but is inaccessible outside the function
+    </script>
+</body>
+</html>
