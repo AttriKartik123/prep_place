@@ -14,3 +14,4 @@ function createuser(username,email,password)
 }
 const chai=new createuser("chai","chai@fb.com","123")
 console.log(chai);
+
