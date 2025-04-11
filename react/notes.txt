@@ -1,1 +1,37 @@
 starting react from anurag pro coder (iman da praa) dated 11-04-2025 09:12PM
+
+
+Q.   Why to learn Reat ?
+Ans: React is a Library of JS . "COMPLEX FRONT END ME KAAM AATA HAI"
+hype , job, trend , build UI used to make interactive , fast processing applications on web .
+Its make it easy to build and manage front end .
+"MOST PROJECT DONT NEED REACT INN INITIAL PHASE"
+
+Q.   Why react was created ? 
+Ans: Ghost/Phnatom Message Problem . Eg: Facebook : chat icon :Messages ka count hmare paas aa jaaataa tha. MESSAGE OPEN HONE K BAAD BHI WO SHOW HOTA REHTA THA  .
+     No consistency in UI .
+
+State(Variables) --> JS  & UI --> DOM   (DONO SYNC HONE CHAHIYE THE)
+                      |     |
+                       -----
+
+- 1st Khan Academy used react and then Unsplash . 
+
+Q. React Learning Process :
+   1. go in-depth -> Babel , Fibre , Virtual DOM , DIff Algos , Hydration
+   2. By Making Projects -> Todo , calculator ,  GitHub API (WE ARE TAKING THIS ROUTE TO CONQUER)
+
+# React is a library :
+-> Framework(Eg: Military) Vs Library(Cool Dude -> Freedom jyada hai)
+
+# Topics to learn :
+-> Core of react (state or UI Manipulation , JSX(Js ke andar html is called JSX))
+-> Component reuability
+-> Reusing the component (Props(Properties(Eg: {Key : "value}) is called properties))
+-> How to propagate change (hooks)
+-> SPA(Single page application)
+
+# Aditional Addon to React :
+-> Router (React don't have Router)
+-> State Management (React dont have state management)
+
