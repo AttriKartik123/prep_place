@@ -32,6 +32,12 @@ Q. React Learning Process :
 -> SPA(Single page application)
 
 # Aditional Addon to React :
--> Router (React don't have Router)
+-> Router (React don't have Router) 
 -> State Management (React dont have state management)
+
+Next-Day:
+
+#react        : simply a library
+#react-DOM    : related with websites
+#react-native : related with apps
 
