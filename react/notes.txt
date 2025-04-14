@@ -61,7 +61,7 @@ ALL ABOUT "Create root" - Creates its own Virtual DOM
 JS apna ek virtaul tree bnata hai track krne k liye  
 
 
-##########REACT FIBRE##############
+########## REACT FIBRE##############
 react fibre is an ongoing reimplementation of React's core algo . It is he culm of over two years of reaserach byu the raeact team .
 
 the goal of the react fibre is to increase the sustainability for areas like animation , layout , gestures. Its headline feature is incremental rendering : The ability to spilt rendering into chunks and spread it out over multiple frames .
