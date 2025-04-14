@@ -41,3 +41,15 @@ Next-Day:
 #react-DOM    : related with websites
 #react-native : related with apps
 
+# npm create vite@latest 01_basic - "TO creae react project"
+(It will create a react project named -01basic and it has various files including package.json public src etc)
+
+# Use npm run ____ (to start anything )
+Vite is a product of VERCEL.
+
+
+"export default App :  export krda file nu App.jsx cho as a acompnenet to be
+used in another file"
+like agar Navbar.tsx bnayi file te ohde andr NAvbar naam de function ch code likhea
+navbar da te ohnu "export default Navbar" karange
+taki jithe use krni aa othe " import {Navbar} from ./Navbar.jsx  "
