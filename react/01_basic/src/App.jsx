@@ -12,8 +12,17 @@ const addValue = () => {
   console.log("Value added :" , Math.random());
   console.log("Clicked" , counter);
   if(counter<20)
-  {counter = counter +1 
-  setCounter(counter)}
+  {//counter = counter +1 
+  //   counter = counter +1 
+  //   counter = counter +1 
+  //   counter = counter +1 
+  // setCounter(counter)
+
+setCounter(prevcounter=>prevcounter+1)
+setCounter(prevcounter=>prevcounter+1)
+setCounter(prevcounter=>prevcounter+1)
+setCounter(prevcounter=>prevcounter+1)
+}
 
   else{console.log("Value is greater than 20");
     }
