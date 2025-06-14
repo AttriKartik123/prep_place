@@ -26,7 +26,7 @@ function App() {
 
   const copyPasswordToClipboard = useCallback(() => {
     if (passwordRef.current) {
-      passwordRef.current.select();
+      passwordRef.current.select(); //highlight effect
       passwordRef.current.setSelectionRange(0, 999); // For mobile devices
       navigator.clipboard.writeText(password);
     }
@@ -95,3 +95,8 @@ function App() {
 }
 
 export default App;
+//useCallback--> to optimize, pass a function as well as a dependancy
+//useEffect is used is to execute code after the component has rendered, which is particularly 
+//useful for operations that need to happen after the UI is updated
+
+//useRef-> for taking reference
