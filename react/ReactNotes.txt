@@ -1,0 +1,5 @@
+React Router - is a third party library used for navigation and routing in react .
+
+className=({ isActive }) => //callback fnn  -- isactive se color change ho jaiha navbar ka 
+ isActive ? 'text-orange-700' : 'text-gray-700'  ? - ternery operator
+                                            
