@@ -10,6 +10,7 @@ import Contact from './components/Contact.jsx'
 import User from './components/User.jsx'
 import Github, { githubInfoLoader } from './components/Github.jsx'
 
+//object based routing
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
@@ -31,18 +32,17 @@ import Github, { githubInfoLoader } from './components/Github.jsx'
 //   }
 // ])
 
+//jsx based routing
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
+
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
-      <Route 
-      loader={githubInfoLoader}
-      path='github' 
-      element={<Github />}
-       />
+      <Route loader={githubInfoLoader} path='github' element={<Github />}/>
+    
     </Route>
   )
 )
