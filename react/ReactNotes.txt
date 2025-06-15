@@ -5,4 +5,12 @@ className=({ isActive }) => //callback fnn  -- isactive se color change ho jaiha
                                             
 wrap <App> in </BrowserRouter> when you are using react router for proper navigation 
 GPS Of web INDIA/PUNJAB/JALANDHAR/DILBAGH NAGAR
-           REACTROUTING/COMPONENTS/HEADER/HEADER.JSX                          
+           REACTROUTING/COMPONENTS/HEADER/HEADER.JSX   
+
+The React Context API is a powerful feature in React that allows you to share data (state, functions, etc.) across your component tree without having to manually pass props down through every single level
+designed to solve a common problem called "prop drilling."
+redux--> transfer of data, state change
+react-Redux, Redux-toolkit(rtk)-->versions
+
+
+1. React.createContext(), store in variable and pass as export default
