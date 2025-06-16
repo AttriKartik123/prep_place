@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import { combineSlices, createSlice , nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -19,7 +21,7 @@ export const todoSlice = createSlice({
             state.todos.push(todo)
         }, // state->sabhi todos ki state btadega eg Id etc and action jo function perform krna hoga (JO VALUES AAI)
         removeTodo: (state,action) => {
-            state.todos = state.todos.filter((todos)=> todo.id !== action.payload)
+            state.todos = state.todos.filter((todos)=> todos.id !== action.payload)
         },
         updateTodo: (state,action) =>  {
             const {id,text} = action.payload ;
