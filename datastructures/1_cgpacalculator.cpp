@@ -19,13 +19,13 @@ int main()
     case 'B':
         cout << "Above 70";
         break;
-    case 'c':
+    case 'C':
         cout << "Above 60";
         break;
-    case 'd':
+    case 'D':
         cout << "Above 50";
         break;
-    case 'f':
+    case 'F':
         cout << "Fail";
         break;
     default:
