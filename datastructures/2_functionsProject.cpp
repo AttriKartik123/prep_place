@@ -29,12 +29,12 @@ int calci() {
     return a*b ;
     return a/b ;
 
-    
 }
+
+
 int main()
 {
     calculator();
     cout<< calci ();
-
     return 0;
 }
