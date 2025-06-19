@@ -5,36 +5,43 @@ using namespace std;
 void calculator()
 {
     int a, b;
-    cout << "Enter values:";
-    cin >> a >> b;
+    char operation;
+    while (a != 0 && b != 0)
+    {
+        cout << "ENter the values";
 
-    cout << "sum=" << a + b << endl;
-    cout << "sub=" << a - b << endl;
-    cout << "mul=" << a * b << endl;
-    cout << "div=" << a / b << endl;
+        cin >> a >> b;
+
+        cout << "What operation do you want to carry =";
+        cin >> operation;
+
+        switch (operation)
+        {
+        case '+':
+            cout << a + b;
+            break;
+
+        case '-':
+            cout << a - b;
+            break;
+
+        case '*':
+            cout << a * b;
+            break;
+
+        case '/':
+            cout << a / b;
+            break;
+
+        default:
+            cout << "Invalid operation";
+        }
+    }
 }
-
-int calci() {
-    int a, b;
-    cout << "Enter values:";
-    cin >> a >> b;
-
-     cout << "sum=" << a + b << endl;
-     cout << "sub=" << a - b << endl;
-     cout << "mul=" << a * b << endl;
-     cout << "div=" << a / b << endl;
-
-    return a+b ;
-    return a-b ;
-    return a*b ;
-    return a/b ;
-
-}
-
 
 int main()
 {
     calculator();
-    cout<< calci ();
+
     return 0;
 }
