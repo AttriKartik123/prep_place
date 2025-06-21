@@ -37,7 +37,7 @@ int main(){
         }
         cout << endl;
     }
-    return 0;  Pattern 5
+    return 0;  
 
     
 }
