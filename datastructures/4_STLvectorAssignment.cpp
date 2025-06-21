@@ -14,16 +14,13 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        int percent;
+        
         cout << "Enter percentage :";
+      
         cin >> percentages[i];
-        percentages.insert(percentages.end(), percent);
+        percentages.insert(percentages.begin()+2, 50);
     }
 
-    if (n == 2)
-    {
-        percentages[1] = 50;
-    }
 
     for (int i = 0; i < n; i++)
     {
