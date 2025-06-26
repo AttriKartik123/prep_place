@@ -19,5 +19,8 @@ int main()
         cout<<q.front();
         q.pop();
     }
+    cout<<q.size();
     return 0;
 }
+//if you dont want to display element like this then make a temporary queue for that purpose
+//Copy the original queue ----------------> queue<int> temp = q;
