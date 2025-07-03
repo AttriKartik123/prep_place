@@ -1,5 +1,6 @@
 #include <iostream>
 #include <deque>
+#include <vector>
 using namespace std;
 int main()
 {
@@ -8,21 +9,28 @@ int main()
     cout<<"Specify window size";
     cin>>k;
 
-    for(auto i=dq.begin();i!=dq.end();i++)
-    {
+    vector<int> arr(dq.begin(), dq.end()); 
+    deque<int> monoDeque;
+    int n = arr.size();
 
-        
-    } 
-    int midIndex = dq.size() / 2;
-    // If even number of elements, delete left-middle
-    if (dq.size() % 2 == 0)
-        midIndex--;
+    cout << "Sliding Window Maximums: ";
 
-    dq.erase(dq.begin() + midIndex);
+    for (int i = 0; i < n; i++) {
+        if (!monoDeque.empty() && monoDeque.front() <= i - k)
+            monoDeque.pop_front();
 
-    for(auto val:dq)
- {
-    cout<<val<<" ";
- }
+        // Remove all smaller elements from the back
+        while (!monoDeque.empty() && arr[monoDeque.back()] < arr[i])
+            monoDeque.pop_back();
+
+        // Add current index
+        monoDeque.push_back(i);
+
+        // Print maximum for the window
+        if (i >= k - 1)
+            cout << arr[monoDeque.front()] << " ";
+    }
+
+    cout << endl;
     return 0;
 }
